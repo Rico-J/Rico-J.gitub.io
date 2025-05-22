@@ -1,2 +1,2 @@
 # Rico-J.gitub.io
-pages site
+## School project personal website. 
