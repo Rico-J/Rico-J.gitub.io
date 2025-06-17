@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-   <header><h1>My life captured in images</h1></header> 
-   <div class="flashing-sign">🚧 Under Construction 🚧</div>
+
+<body class="metal-mania-regular">
+    <header>
+        <h1>My life captured in images</h1>
+    </header>
+    <section id="hobbies">
+        <h1>Family Photos</h1>
+        <div id="container1" class="slideshow" data-type="image" data-index="1">
+            <img id="imageSlide1" src="lifeimages/xmasfamily.jpg" style="width: 300px; height: 300px;">
+            <br>
+            <button onclick="prevSlide(1)">Previous</button>
+            <button onclick="nextSlide(1)">Next</button>
+        </div>
+        <br>
+        <h1>Concerts</h1>
+        <div id="container1" class="slideshow" data-type="image" data-index="2">
+            <img id="imageSlide2" src="lifeimages/concerts1.jpg" style="width: 300px; height: 300px;">
+            <br>
+            <button onclick="prevSlide(2)">Previous</button>
+            <button onclick="nextSlide(2)">Next</button>
+        </div>
+        <br>
+        <h1>Adventures</h1>
+        <div id="container1" class="slideshow" data-type="image" data-index="3">
+            <img id="imageSlide3" src="lifeimages/adventures.jpg" alt="adventures" style="width: 300px; height: 300px;">
+            <br>
+            <button onclick="prevSlide(3)">Previous</button>
+            <button onclick="nextSlide(3)">Next</button>
+        </div>
+    </section>
     <footer class="links">
         <a id="home" href="index.html" alt="HomePage link">
-            <img src="images/house-user-svgrepo-com.png" alt="home" width="100">
+            <img src="images/house-user-svgrepo-com.png" width="100">
             <p style="color: rgb(96, 129, 157);">HomePage</p>
         </a>
         <br>
@@ -35,5 +66,7 @@
             <p style="color: rgb(96, 129, 157);">Connect With Me</p>
         </a>
     </footer>
+    <script src="index.js"></script>
 </body>
+
 </html>
