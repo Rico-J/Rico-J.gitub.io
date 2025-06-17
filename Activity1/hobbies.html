@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="metal-mania-regular">
     <header>
         <h1>
@@ -28,22 +29,32 @@
     <!--I only had enough time to submit one video of my hobbies which is my favorite hobby-->
     <section id="hobbies">
         <div class="hobby-card">
-            <div>
+            <div class="slideshow" data-type="video" data-index= "0">
                 <h2>Playing my guitar</h2>
-                <iframe class="vid" width="300" height="250" src="https://youtube.com/embed/7nmfn4aSjCw?si=5X1F8M1xzZ3df7hI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe class="vid" width="300" height="250" src="https://youtube.com/embed/CYYJalqrU_s?si=GBkSu_WlVfwzuhTm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe class="vid" width="300" height="250" src="https://www.youtube.com/embed/5RoLAfxoUWY?si=KJTMdAn8U2orN2lC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="videoSlide0" width="300" height="250"
+                    frameborder="0"
+                    allowfullscreen></iframe>
+                <br>
+                <button onclick="prevSlide(0)">Prev</button>
+                <button onclick="nextSlide(0)">Next</button>
             </div>
         </div>
         <!--I created different div classes to style them better in the styles tag-->
         <div class="hobby-card">
-            <div><h2>Staying Fit</h2></div>
-            <iframe class="vid" width="300" height="250" src="https://youtube.com/embed/CzSy5O7U6ac?si=Rtj8yfII4lfRUHrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div>
+                <h2>Staying Fit</h2>
+            </div>
+            <iframe class="vid" width="300" height="250" src="https://youtube.com/embed/CzSy5O7U6ac?si=Rtj8yfII4lfRUHrU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <img class="vid" src="images/fit.jpeg" alt="posing" width="150">
             <img class="vid" src="images/fit2.jpeg" alt="posing" width="150">
         </div>
         <div class="hobby-card">
-            <div><h2>Concert Go'er</h2></div>
+            <div>
+                <h2>Concert Go'er</h2>
+            </div>
             <img class="vid" src="images/inflames.jpg" alt="In Flames Concert" width="250">
             <img class="vid" src="images/deftones.jpg" alt="Deftones concert" width="250">
             <img class="vid" src="images/coreytaylor.jpg" alt="Corey Taylor" width="250">
@@ -51,7 +62,7 @@
     </section>
     <!--These are the links to the main page and also my social pages such as github, and linkedin-->
     <footer class="links">
-         <a id="home" href="index.html" alt="HomePage link">
+        <a id="home" href="index.html" alt="HomePage link">
             <img src="images/house-user-svgrepo-com.png" alt="home" width="100">
             <p style="color: rgb(96, 129, 157);">HomePage</p>
         </a>
@@ -76,6 +87,7 @@
             <p style="color: rgb(96, 129, 157);">Connect With Me</p>
         </a>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
