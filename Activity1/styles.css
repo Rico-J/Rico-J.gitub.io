@@ -60,11 +60,15 @@ header {
 }
 
 #summary {
+    width: 90%;
+    max-width: 90rem;
+    margin: auto;
+    box-sizing: border-box;
+    word-wrap: break-word;
     text-align: center;
     padding: 20px;
     border: 1px solid black;
     border-radius: 15px;
-    height: 15vh;
     background: repeating-linear-gradient(90deg, rgb(48, 48, 126), gray, rgb(48, 48, 126));
 }
 
@@ -92,28 +96,6 @@ hr {
 
 .links a:hover {
     transform: scale(1.2);
-}
-
-.flashing-sign {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
-    color: white;
-    background-color: red;
-    animation: flash-bg 1s infinite;
-}
-
-@keyframes flash-bg {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
 }
 
 #intro {
@@ -150,14 +132,14 @@ hr {
     transform: translateX(-20px);
 }
 
-.vid {
+.vid, img {
     overflow: hidden;
     transition: transform 0.2s ease;
     border-radius: 10px;
     margin: 15px;
 }
 
-.vid:hover {
+.vid:hover, img:hover{
     transform: scale(1.2);
 }
 
@@ -167,4 +149,22 @@ hr {
 
 .grow-link:hover {
     transform: scale(1.2);
+}
+#container1 {
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(52, 48, 47);
+    text-shadow: rgb(246, 246, 224) 1px 1px 10px;
+}
+button {
+    color: rgb(145, 214, 219);
+    background-color: #333;
+    border-radius: 50px;
+    transition: transform 0.2s ease;
+}
+button:hover{
+    transform: translateX(-10px);
 }
